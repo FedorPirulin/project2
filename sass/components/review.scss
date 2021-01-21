@@ -1,0 +1,42 @@
+.review {
+    margin-bottom: 135px;
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    &__main-title {
+        padding-left: 230px;
+        margin-top: 185px;
+    }
+
+    &__slider {
+        margin-top: 140px;
+        padding: 85px 100px 85px 150px;
+        background: url(../img/table4.jpg) 0 0 no-repeat;
+    }
+}
+
+@media (max-width: $tabletWidth) {
+    .review {
+        &__main-title {
+
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 45px;
+            letter-spacing: 0.05em;
+            text-align: center;
+
+            padding: 0;
+            margin-top: 35px;
+            margin-bottom: 70px;
+        }
+
+        &__slider {
+            padding: 0 60px;
+            background: transparent;
+            margin: 0 auto;
+        }
+    }
+}

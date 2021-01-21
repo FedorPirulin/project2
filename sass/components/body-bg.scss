@@ -1,0 +1,17 @@
+.grey-grad {
+    background: $greyGradient;
+}
+
+.creme {
+    background: $creme;
+}
+
+.grey {
+    background: $grey;
+}
+
+@media (max-width: $tabletWidth) {
+    .creme {
+        background: $grey;
+    }
+}

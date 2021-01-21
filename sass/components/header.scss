@@ -1,0 +1,153 @@
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-direction: column;
+    
+    &__wrapper {
+        background: #ffffff url(../img/table1.jpg) 0 0 no-repeat;
+        background-size: cover;
+        flex-direction: column;
+    }
+
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 50px 80px;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 105px;
+        padding-left: 12.1%;
+        padding-bottom: 95px;
+    }
+
+    &__logo {
+        width: 358px;
+        height: 150px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__phone {
+        margin-top: 20px;
+
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    &__order {
+        margin-top: 15px;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 69px;
+        text-align: left;
+
+        margin-bottom: 297px;
+    }
+
+    &__video {
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+
+        box-sizing: border-box;
+        padding-left: 83px;
+        display: flex;
+        align-items: center;
+        width: 275px;
+        height: 65px;
+    }
+
+    &__video::before {
+        position: absolute;
+        content: "";
+
+        width: 65px;
+        height: 65px;
+
+        top: 0;
+        left: 0;
+
+        background: url(../img/play.svg) 0 0 no-repeat;
+    }
+}
+
+@media (max-width: $tabletWidth) {
+    .header {
+        padding-bottom: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: url(../img/header-mobile.jpg) 0 0 no-repeat;
+        background-size: cover;
+
+        &__mobile-side {
+            background: $grey;
+            padding-bottom: 20px;
+        }
+        &__main-title {
+            margin-bottom: 395px;
+        }
+
+        &__title {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0.05em;
+            text-align: center;
+
+        }
+        &__mobile {
+
+            &--menu {
+                position: relative;
+                box-sizing: border-box;
+                padding: 20px 25px 20px 60px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 35px;
+            }
+            
+            
+        }
+
+        &__logo {
+            align-self: center;
+            width: 90px;
+            height: 38px;
+        }
+
+        &__img {
+            width: 90px;
+            height: 38px;
+        }
+
+        &__phone {
+            margin: 0;
+            width: 40px;
+            height: 40px;
+            background: url(../img/phone-mobile.svg) 0 0 no-repeat;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.mobile {
+    display: none;
+
+    &__block {
+      display: none;
+    }
+  }
+
+  .desctop {
+    display: flex;
+
+    &__block {
+      display: block;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    .mobile {
+      display: flex;
+
+      &__block {
+        display: block;
+      }
+    }
+
+    .desctop {
+      display: none;
+
+      &__block {
+        display: none;
+      }
+    }
+
+    body {
+      min-width: 375px;
+    }
+}

@@ -1,0 +1,21 @@
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    margin-bottom: 114px;
+
+    &__item {
+        display: flex;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__arrow {
+        display: block;
+        width: 41px;
+        height: 8px;
+
+        background: url(../img/bread-arrow.svg) 0 0 no-repeat;
+    }
+}

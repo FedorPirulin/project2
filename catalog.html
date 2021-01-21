@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="creme">
+    <!-- Хедер -->
+    <header class="header header__mobile-side" id="up">
+        <!-- Хедер (повторяющаяся часть) -->
+        <div class="header__top desctop">
+            <a href="./index.html" class="header__logo">
+                <img src="./img/Lofthouse.svg" alt="" class="header__img">
+            </a>
+            <a href="tel:+78007005207" class="header__phone">8&nbsp(800)&nbsp700&#8209;52&#8209;07</a>
+            <a href="#" class="btn btn__order header__order btn--white">Заказать</a>
+        </div>
+        <ul class="breadcrumbs desctop">
+            <li class="breadcrumbs__item">
+                <a href="./index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Каталог</span>
+            </li>
+        </ul>
+        <!-- Header mobile -->
+        <div class="header__mobile--menu mobile">           
+            <div class="burger-menu mobile">
+                <a href="#" class="burger-menu__button">
+                    <span class="burger-menu__lines"></span>
+                </a>
+            </div>
+            <a href="./index.html" class="header__logo">
+                <img src="./img/Lofthouse.svg" alt="" class="header__img">
+            </a>
+            <a href="tel:+78007005207" class="header__phone"></a>
+        </div>
+        <nav class="burger-menu burger-menu__nav">
+            <ul class="burger-menu__list ">
+                <li class="burger-menu__item">
+                    <a href="./index.html" class="burger-menu__link">Главная</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a href="./about-us.html" class="burger-menu__link">О нас</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a href="./catalog.html" class="burger-menu__link">Каталог</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a href="#" class="burger-menu__link">Отзывы</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a href="#" class="burger-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main main__catalog">
+        <!-- Каталог title -->
+        <h2 class="main__title catalog__main-title" >Каталог</h2>
+        <!-- Секция "Поиск" -->
+        <section class="search">
+            
+            <form class="search__form" action="#" method="get">
+                <a href="./index.html" class="catalog__back-btn mobile">назад</a>
+                <input class="search__input" type="search" name="search" id="search" placeholder="поиск" autocomplete="off">
+                <button type="submit" class="search__button"><span class="visually-hidden">Поиск</span></button>
+            </form>
+            <p class="search__article">Вся мебель производится вручную из ценных пород дерева</p>
+        </section>
+        <!-- Секция "Каталог" -->
+        <section class="catalog">
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <a href="./catalog-tables-river.html" class="catalog__link--img">
+                        <img src="./img/table-river.jpg" data-tooltip="Узнать подробнее" alt="Столы Река" class="catalog__img">                      
+                    </a>
+                    <a href="./catalog-tables-river.html" class="catalog__link">СТОЛЫ  “РЕКА”</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-solid-wood-tables.html" class="catalog__link--img">
+                        <img src="./img/table-massive.jpg" data-tooltip="Узнать подробнее" alt="Столы из массива" class="catalog__img">
+                    </a>
+                    <a href="./catalog-solid-wood-tables.html" class="catalog__link">СТОЛЫ ИЗ МАССИВА</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-slab-tables.html" class="catalog__link--img">
+                        <img src="./img/table-kerob.jpg" data-tooltip="Узнать подробнее" alt="Столы из слэбов" class="catalog__img">                        
+                    </a>
+                    <a href="./catalog-slab-tables.html" class="catalog__link">СТОЛЫ ИЗ СЛЭБОВ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-bathroom.html" class="catalog__link--img">
+                        <img src="./img/bathroom.jpg" data-tooltip="Узнать подробнее" alt="В ванную" class="catalog__img">                       
+                    </a>
+                    <a href="./catalog-bathroom.html" class="catalog__link">В ВАННУЮ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-coffee-tables.html" class="catalog__link--img">
+                        <img src="./img/table-jornal.jpg" data-tooltip="Узнать подробнее" alt="Журнальные столы" class="catalog__img">                       
+                    </a>
+                    <a href="./catalog-coffee-tables.html" class="catalog__link">ЖУРНАЛЬНЫЕ СТОЛЫ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-racks.html" class="catalog__link--img">
+                        <img src="./img/racks.jpg" data-tooltip="Узнать подробнее" alt="Стеллажи" class="catalog__img">                        
+                    </a>
+                    <a href="./catalog-racks.html" class="catalog__link">СТЕЛЛАЖИ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-beds.html" class="catalog__link--img">
+                        <img src="./img/bed.jpg" data-tooltip="Узнать подробнее" alt="Кровати" class="catalog__img">                       
+                    </a>
+                    <a href="./catalog-beds.html" class="catalog__link">КРОВАТИ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-mirrors.html" class="catalog__link--img">
+                        <img src="./img/mirror.jpg" data-tooltip="Узнать подробнее" alt="Зеркала" class="catalog__img">                      
+                    </a>
+                    <a href="./catalog-mirrors.html" class="catalog__link">ЗЕРКАЛА</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-consoles.html" class="catalog__link--img">
+                        <img src="./img/box.jpg" data-tooltip="Узнать подробнее" alt="Консоли" class="catalog__img">                      
+                    </a>
+                    <a href="./catalog-consoles.html" class="catalog__link">КОНСОЛИ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-sofas.html" class="catalog__link--img">
+                        <img src="./img/sofa.jpg" data-tooltip="Узнать подробнее" alt="Диваны" class="catalog__img">                      
+                    </a>
+                    <a href="./catalog-sofas.html" class="catalog__link">ДИВАНЫ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-others.html" class="catalog__link--img">
+                        <img src="./img/different.jpg" data-tooltip="Узнать подробнее" alt="Разное" class="catalog__img">                       
+                    </a>
+                    <a href="./catalog-others.html" class="catalog__link">РАЗНОЕ</a>
+                </li>
+                <li class="catalog__item">
+                    <a href="./catalog-objects.html" class="catalog__link--img">
+                        <img src="./img/objects.jpg" data-tooltip="Узнать подробнее" alt="Наши объекты" class="catalog__img">                       
+                    </a>
+                    <a href="./catalog-objects.html" class="catalog__link">НАШИ ОБЪЕКТЫ</a>
+                </li>
+            </ul>
+            <a href="#up" class="catalog__btn-up mobile">вверх</a>
+        </section>
+        <!-- Секция "Форма обратной связи" -->
+        <section class="main__application application">
+            <h2 class="main__title application__title application__title--side desctop">Нужна мебель на заказ?</h2>
+            <p class="application__article desctop">Оставьте заявку и наши менеджеры обязательно свяжутся с Вами!</p>
+            <p class="application__article mobile">Оставьте Ваш номер телефона и мы свяжемся с Вами!</p>
+            <form action="#" class="application__form application__form--side">
+                <div class="application__item">
+                    <input type="text" class="application__input application__input--name" name="phone" placeholder="Ваше имя">
+                </div>
+                <div class="application__item">
+                    <input type="text" class="application__input" name="name" placeholder="Ваш номер телефона">
+                </div>
+                <button type="submit" class="btn btn__send">Оставить заявку</button>
+            </form>
+        </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer footer--side">
+        <!-- Десктоп версия -->
+        <div class="footer__wrapper--side desctop">
+            <a href="#" class="footer__logo">
+                <img src="./img/Lofthouse.svg" alt="" class="footer__img">
+            </a>
+           
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link footer__menu-link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./about-us.html" class="menu__link footer__menu-link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./catalog.html" class="menu__link footer__menu-link">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link footer__menu-link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link footer__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__insta-wrap">
+                <span class="footer__article footer__article--side">Наш Instagram</span>
+                <a href="#" class="footer__instagram--side"></a>
+            </div>
+        </div>
+        <!-- Мобильная версия -->
+        <div class="footer__wrapper mobile">
+            <h2 class="main__title footer__title">Наши контакты</h2>
+            <a href="tel:+78007005207" class="footer__phone mobile">8&nbsp(800)&nbsp700&#8209;52&#8209;07</a>
+            <p class="footer__article">
+                г.Ростов-на-Дону, ул Доватора 142 А                
+            </p>
+            <p class="footer__article">
+                г. Москва ш. Головинское 5 корп. 1<br>
+                Интрерьер-центр "Водный" (2-й этаж)
+            </p>
+            <a href="tel:+78007005207" class="footer__phone desctop">8&nbsp(800)&nbsp700&#8209;52&#8209;07</a>
+            <div class="footer__inst-block">
+                <span class="footer__article footer__article--insta">Наш Instagram</span>
+                <a href="#" class="footer__instagram"></a>
+            </div>      
+            <nav class="footer__navigation menu desctop">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link footer__menu-link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./about-us.html" class="menu__link footer__menu-link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./catalog.html" class="menu__link footer__menu-link">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link footer__menu-link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link footer__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__bottom desctop">
+                <a href="#" class="footer__logo">
+                    <img src="./img/Lofthouse-white.svg" alt="" class="footer__img">
+                </a>
+                <span class="footer__date">(c) 2020</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

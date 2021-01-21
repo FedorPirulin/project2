@@ -1,0 +1,33 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 60px;
+    }
+
+    &__item:nth-child(5) {
+        margin-right: 0;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}

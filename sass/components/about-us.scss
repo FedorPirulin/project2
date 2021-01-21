@@ -1,0 +1,81 @@
+.about-us {
+    padding-left: 230px;
+
+    &__main-title {
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__article {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0.05em;
+        text-align: left;
+
+        margin-bottom: 75px;
+    }
+
+    &__list {
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 120px;
+        padding-left: 150px;
+        margin-bottom: 100px;
+
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.05em;
+        text-align: left;
+
+    }
+
+    &__item:nth-child(6) {
+        margin-bottom: 0;
+    }
+
+    &__item::before {
+        position: absolute;
+        content: "";
+
+        width: 120px;
+        height: 120px;
+
+        top: 0;
+        left: 0;
+    }
+
+    &__item1::before {
+        background: url(../img/medal_icon.svg) 0 0 no-repeat;
+    }
+
+    &__item2::before {
+        background: url(../img/calculator_icon.svg) 0 0 no-repeat;
+    }
+
+    &__item3::before {
+        height: 124px;
+        background: url(../img/shield_icon.svg) 0 0 no-repeat;
+    }
+
+    &__item4::before {
+        background: url(../img/truck-icon.svg) 0 0 no-repeat;
+    }
+
+    &__item5::before {
+        background: url(../img/saw_icon.svg) 0 0 no-repeat;
+    }
+
+    &__item6::before {
+        background: url(../img/note_list_icon.svg) 0 0 no-repeat;
+    }
+}

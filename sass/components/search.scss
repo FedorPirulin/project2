@@ -1,0 +1,108 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+
+    &__form {
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+        margin-right: 213px;
+    }
+    &__input {
+        width: 200px;
+        outline: none;
+        background: transparent;
+        border: none;
+        border-bottom:  2px solid $black;
+    }
+
+    &__input::placeholder {
+        font-family: Comfortaa;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__button {
+        border: none;
+        background: transparent;
+        outline: none;
+        padding: 0;
+    }
+
+    &__button::before {
+        position: absolute;
+        content: "";
+
+        width: 35px;
+        height: 35px;
+        
+        bottom: 26px;
+        right: 10px;
+
+        background: url(../img/search.svg) 0 0 no-repeat;
+    }
+
+    &__article {
+        font-family: Comfortaa;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
+
+@media (max-width: $tabletWidth) {
+    .search {
+        flex-direction: column;
+        padding: 0 25px;
+
+        &__article {
+            font-size: 22px;
+            line-height: 33px;
+
+            margin-top: 37px;
+            margin-bottom: 80px;
+            order: -1;
+            text-align: center;
+        }
+
+        &__form {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin-right: 0;
+            align-self: center;
+        }
+
+        &__input {
+            margin-left: auto;
+            width: 100px;
+        }
+
+        &__input::placeholder {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__button::before {
+            position: absolute;
+            content: "";
+    
+            width: 24px;
+            height: 23px;
+            
+            bottom: 5px;
+            right: 5px;
+    
+            background: url(../img/search-mob.svg) 0 0 no-repeat;
+        }
+    }
+}
